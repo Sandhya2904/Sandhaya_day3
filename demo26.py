@@ -1,5 +1,4 @@
 import time
-
 def pin_test():
     fobj = open('pin_history.log','a')
     pin = 1234
@@ -17,5 +16,4 @@ def pin_test():
         print('Pin is blocked')
         fobj.write(f'Pin is blocked - {time.ctime()}\n')
     fobj.close()
-    
 pin_test()
